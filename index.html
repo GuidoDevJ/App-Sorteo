@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sorteo</title>
+  </head>
+  <body>
+    <main class="contenedor">
+      <div class="main">
+        <div class="cargar-player">
+          <h1>Sorteo</h1>
+          <form action="" class="form">
+            <label for="participantes">Ingresar Participantes</label>
+            <input id="input" type="text" placeholder="Ejemplo : Marcos" />
+            <button id="btn">Ingresar</button>
+            <label for="cant-part">¿Cuantos ganadores quieres?</label>
+            <input id="cant-player" type="number" />
+            <button id="sortear">Sortear</button>
+            <div class="ganadores">
+              <h2>Ganadores</h2>
+              <div class="lds-spinner">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div id="pantalla">
+          <h2>Participantes</h2>
+          <ul class="lista-player"></ul>
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
